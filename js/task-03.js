@@ -13,17 +13,9 @@ const images = [
   },
 ];
 
-// Используй массив объектов images для создания элементов < img > вложенных в < li >. 
-// Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
-// Все элементы галереи должны добавляться в DOM за одну операцию вставки.
-// Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
 
 const galleryList = document.querySelector('.gallery');
 galleryList.classList.toggle('gallery-img');
-
-const galleryItem = document.createElement('li');
-galleryItem.classList.add('gallery-item');
-console.log(galleryItem);
 
 images.forEach(el => {
   galleryList.insertAdjacentHTML(
@@ -36,5 +28,5 @@ images.forEach(el => {
 
 
 
-// console.log(galleryList);
+
 
