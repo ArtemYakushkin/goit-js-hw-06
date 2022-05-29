@@ -1,6 +1,4 @@
 const form = document.querySelector('.login-form');
-// const emailEl = document.querySelector('input[type="email"]').value;
-// const passwordEl = document.querySelector('input[type="password"]').value;
 
 form.addEventListener('submit', onFormSubmit);
 
