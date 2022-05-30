@@ -3,10 +3,8 @@ const lengthInput = inputEl.getAttribute('data-length');
 
 inputEl.addEventListener('blur', onChangeColor);
 
-function onChangeColor(event) {
-    event.preventDefault();
-
-    if (inputEl.value.length <= lengthInput) {
+function onChangeColor() {
+    if (inputEl.value.length == lengthInput) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
     } else {
